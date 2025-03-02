@@ -8,6 +8,8 @@ services:
     env_file:
       - .env  # Load environment variables
     command: python ai_recruiter.py  # Run the main script
+    stdin_open: true  # Keep STDIN open
+    tty: true         # Allocate a pseudo-TTY
 
   resume_generator:
     build: .

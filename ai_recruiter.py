@@ -33,7 +33,7 @@ def extract_text_from_pdf(pdf_path):
                 text += extracted + " "
     return text.strip()
 
-pdf_directory = r'../conversational_agent_ai_recruiter/resume_collection'
+pdf_directory = r'resume_collection'
 resumes = []
 
 for filename in os.listdir(pdf_directory):
